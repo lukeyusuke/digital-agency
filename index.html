@@ -10,135 +10,154 @@
         <title> Digital Agency </title>
     </head>
     <body>
-        <section class="introduction-content">
+        <section class="introduction">
             <header class="header-content">
                 <div class="logo">
-                    <i class='bx bxl-slack'></i>
+                    <a href="#">
+                        <i class='bx bxl-slack'></i>
+                    </a>
                 </div>
                 <nav>
-                    <!-- Adicionar dropdown menu -->
                     <ul>
-                        <a href="#">
+                        <a class="main-link" href="#">
                             <li>HOME</li>
                         </a>
-                        <a href="#">
-                            <li>SERVIÇOS</li>
-                                <ul>
-                                    <a href="">
-                                        <li> Serviço 1 </li>
-                                    </a>
-                                    <a href="">
-                                        <li> Serviço 2 </li>
-                                    </a>
-                                    <a href="">
-                                        <li> Serviço 3 </li>
-                                    </a>
-                                </ul>
+                        <a class="main-link" href="#">
+                            <div class="dropdown">
+                                <li>SERVIÇOS</li>
+                                <i class='bx bx-chevron-down'></i>
+                            </div>
+                            <ul class="dropdown-links">
+                                <li>Serviço</li>
+                                <li>Serviço</li>
+                                <li>Serviço</li>
+                            </ul>
                         </a>    
-                        <a href="#">
+                        <a class="main-link" href="#">
                             <li>TRABALHOS</li>
                         </a>
-                        <a href="#">
+                        <a class="main-link" href="#">
                             <li>SOBRE</li>
                         </a>
-                        <a href="#">
+                        <a class="main-link" href="#">
                             <li>BLOG</li>
                         </a>
-                        <a href="#">
+                        <a class="main-link contact-link" href="#">
                             <li>CONTATO</li>
                         </a>
-                        <i class='bx bx-search'></i>
+                        <a class="main-link" href="">
+                            <li>
+                                <i class='bx bx-search'></i>
+                            </li>
+                        </a>
                     </ul>
                 </nav>
             </header>
-            <div>
-                <div>
-                    <p> MENTE CRIATIVA, TRABALHOS CRIATIVOS </p>
-                    <h1> Nós somos uma agência digital </h1>
-                    <div>
-                        <button> GETTING STARTED </button>
+            <div class="content">
+                <div class="text-content">
+                    <p class="paragraph-content"> MENTE CRIATIVA, TRABALHOS CRIATIVOS </p>
+                    <h1 class="heading-content"> Nós somos uma<br/> agência digital </h1>
+                    <div class="button-style">
+                        <a href="">
+                            <button> GETTING STARTED </button>
+                        </a>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="block-content block-content-one">
+                    <div class="flex-item">
                         <i class='bx bx-paper-plane'></i>
-                        <h3> Conceito do Futuro </h3>
+                        <h3 class="p-block-content"> Conceito do Futuro </h3>
                         <div class="line"> </div>
-                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+                        <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
                     </div>
-                    <div>
+                    <div class="flex-item">
                         <i class='bx bx-brain'></i>
-                        <h3> Grandes Ideais </h3>
+                        <h3 class="p-block-content"> Grandes Ideais </h3>
                         <div class="line"> </div>
-                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+                        <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
                     </div>
-                    <div>
+                    <div class="flex-item">
                         <i class='bx bx-bulb'></i>
-                        <h3> Soluções Criativas </h3>
+                        <h3 class="p-block-content"> Soluções Criativas </h3>
                         <div class="line"> </div>
-                        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+                        <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h2> Serviços </h2>
-                <p> NOSSOS SERVIÇOS À DISPOSIÇÃO DO CLIENTE </p>
-            </div>
-            <div>
-                <div>
-                    <i class='bx bx-line-chart'></i>
-                    <h3> Estratégia Digital </h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+        <section class="services">
+            <div class="content">
+                <div class="title-content">
+                    <!--
+                        <div class="line"> </div>
+                    -->
+                    <h2 class="heading"> Serviços </h2>
+                    <p class="paragraph-content"> NOSSOS SERVIÇOS À DISPOSIÇÃO DO CLIENTE </p>
                 </div>
-                <div>
-                    <i class='bx bx-pencil' ></i>
-                    <h3> Design UX </h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+                <div class="block-content block-content-two">
+                    <div class="flex-item">
+                        <i class='bx bx-line-chart'></i>
+                        <h3 class="p-block-content"> Estratégia Digital </h3>
+                        <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+                    </div>
+                    <div class="flex-item">
+                        <i class='bx bx-pencil' ></i>
+                        <h3 class="p-block-content"> Design UX </h3>
+                        <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+                    </div>
+                    <div class="flex-item">
+                        <i class='bx bxs-magic-wand'></i>
+                        <h3 class="p-block-content"> Design UI </h3>
+                        <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+                    </div>
+                    <div class="flex-item">
+                        <i class='bx bx-globe' ></i>
+                        <h3 class="p-block-content"> Mídias Sociais </h3>
+                        <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+                    </div>
+                    <div class="flex-item">
+                        <i class='bx bx-bookmark' ></i>
+                        <h3 class="p-block-content"> Conceito de Design </h3>
+                        <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+                    </div>
+                    <div class="flex-item">
+                        <i class='bx bx-wifi' ></i>
+                        <h3 class="p-block-content"> Emparelhamento digital </h3>
+                        <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
+                    </div>
                 </div>
-                <div>
-                    <i class='bx bxs-magic-wand'></i>
-                    <h3> Design UI </h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
-                </div>
-                <div>
-                    <i class='bx bx-globe' ></i>
-                    <h3> Mídias Sociais </h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
-                </div>
-                <div>
-                    <i class='bx bx-bookmark' ></i>
-                    <h3> Conceito de Design </h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
-                </div>
-                <div>
-                    <i class='bx bx-wifi' ></i>
-                    <h3> Emparelhamento digital </h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
-                </div>
-                <div> </div>
+                <!--
+                    <div class="line-y">
+    
+                    </div>
+                -->
             </div>
         </section>
-        <section>
+        <section class="works">
             <div>
-                <div>
-                    <h2> Trabalhos </h2>
-                    <p> COISAS QUE FIZEMOS </p>
+                <div class="content block-content">
+                    <div>
+                        <h2 class="heading"> Trabalhos </h2>
+                        <p class="paragraph-content"> COISAS QUE FIZEMOS </p>
+                    </div>
+                    <div class="button-style">
+                        <a href="">
+                            <button> VEJA MAIS </button>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <button> VIEW ALL </button>
+                <div>  </div>
+            </div>
+            <!--
+                <div class="flex-one">
+                    <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
+                    <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
+                    <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
+                    <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
+                    <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
+                    <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
                 </div>
-            </div>
-            <div>
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-            </div>
-            <div>  </div>
+            -->
         </section>
         <section>  
             <div>
@@ -172,48 +191,48 @@
             </div>
             <div>  </div>
         </section>
-        <section>
-            <div>
-                <h2> Depoimentos </h2>
-                <p> SOMOS MAIS QUE UMA AGÊNCIA DIGITAL </p>
+        <section class="testimonials">
+            <div class="content">
+                <h2 class="heading"> Depoimentos </h2>
+                <p class="paragraph-content"> SOMOS MAIS QUE UMA AGÊNCIA DIGITAL </p>
             </div>
-            <div>
-                <div>
+            <div class="block-content">
+                <div class="depoiment-box">
                     <i class='bx bxs-quote-alt-right'></i>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos expedita optio ullam quia voluptatibus amet vel. </p>
-                    <img src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
-                    <div>
-                        <img src="images/depoiments/elizabeth-assessment.jpeg" alt="Foto de Elizabeth Francis">
+                    <img class="stars" src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
+                    <div class="profile-content">
+                        <img class="photo" src="images/depoiments/elizabeth-assessment.jpeg" alt="Foto de Elizabeth Francis">
                         <span> Elizabeth Francis </span>
                         <span> Cargo que ocupa </span>
                     </div>
                 </div>
-                <div>
+                <div class="depoiment-box">
                     <i class='bx bxs-quote-alt-right'></i>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos expedita optio ullam quia voluptatibus amet vel. </p>
-                    <img src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
-                    <div>
-                        <img src="images/depoiments/janice-assesment.jpeg" alt="Foto de Janice Morgan">
+                    <img class="stars" src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
+                    <div class="profile-content">
+                        <img class="photo" src="images/depoiments/janice-assesment.jpeg" alt="Foto de Janice Morgan">
                         <span> Janice Morgan </span>
                         <span> Cargo que ocupa </span>
                     </div>
                 </div>
-                <div>
+                <div class="depoiment-box">
                     <i class='bx bxs-quote-alt-right'></i>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos expedita optio ullam quia voluptatibus amet vel. </p>
-                    <img src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
-                    <div>
-                        <img src="images/depoiments/john-assesment.jpeg" alt="Foto de John Maguire">
+                    <img class="stars" src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
+                    <div class="profile-content">
+                        <img class="photo" src="images/depoiments/john-assesment.jpeg" alt="Foto de John Maguire">
                         <span> John Maguire </span>
                         <span> Cargo que ocupa </span>
                     </div>
                 </div>
-                <div>
+                <div class="depoiment-box">
                     <i class='bx bxs-quote-alt-right'></i>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos expedita optio ullam quia voluptatibus amet vel. </p>
-                    <img src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
-                    <div>
-                        <img src="images/depoiments/craig-assesment.jpeg" alt="Foto de Craig Schneider">
+                    <img class="stars" src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
+                    <div class="profile-content">
+                        <img class="photo"src="images/depoiments/craig-assesment.jpeg" alt="Foto de Craig Schneider">
                         <span> Craig Schneider </span>
                         <span> Cargo que ocupa </span>
                     </div>
