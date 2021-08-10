@@ -2,7 +2,7 @@
 
 /* --------- GLOBAL ----------*/
 :root{
-    --layout-padding: 1.25em 3.25em;
+    --layout-padding: 3.25em 3.25em;
 }
 
 img{
@@ -20,7 +20,7 @@ i{
 .content{
     width: 80%;
     padding: 1.25em;
-    margin: 3.25em auto;
+    margin: auto;
 }
 
 .paragraph-content{
@@ -31,7 +31,6 @@ i{
 
 .line-x{
     background-color: #66F7F0;
-    margin: 1.25em 0;
     height: 2px;
     width: 20%;
 }
@@ -48,7 +47,7 @@ i{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 4em;
+    margin-top: 5em;
 }
 
 .heading{
@@ -89,7 +88,7 @@ i{
     justify-content: space-between;
 }
 
-.introduction .header-content .logo i{
+.logo i{
     color: white;
     font-size: 2em;
 }
@@ -100,6 +99,20 @@ i{
     font-size: 0.85em;
     font-weight: 600;
     margin: 0 0.5em;
+}
+
+.link-effect::after{
+    content: '';
+    margin-top: 0.2em;
+    display: block;
+    background-color: #66F7F0;
+    width: 0;
+    height: 2px;
+    transition: all .5s ease;
+}
+
+.link-effect:hover:after{
+    width: 100%;
 }
 
 .header-content .main-link .dropdown-links{
@@ -162,7 +175,7 @@ i{
     margin: 0.5em 0;
 }
 
-.content .button-style button{
+.button-style button{
     background: none;
     border: 2px solid #66F7F0;
     color: #66F7F0;
@@ -175,11 +188,11 @@ i{
     transition-delay: .1s;
 }
 
-.content .button-style button:hover{
+.button-style button:hover{
     color: #fff;
 }
 
-.content .button-style button::before{
+.button-style button::before{
     content: '';
     background-color: #66F7F0;
     top: 0;
@@ -192,7 +205,7 @@ i{
     z-index: -1;
 }
 
-.content .button-style button:hover:before{
+.button-style button:hover:before{
     width: 100%;
 }
 
@@ -241,47 +254,234 @@ i{
 /*--------- WORKS -----------*/
 .works{
     background-color: #121212;
+    padding: 1.25em 0 5em 0;
+}
+
+.works .content{
     padding: var(--layout-padding);
 }
 
+.works .block-content img{
+    width: 16.5%;
+}
+
 /*------- ABOUT ---------*/
+.about{
+    background-color: #0D0A15;
+    padding: var(--layout-padding);
+}
+
+.about .about-us{
+    color: #fff;
+    padding: 1em;
+    width: 32%;
+}
+
+.about .about-us + .about-us{
+    border-left: 2px solid #66F7F0;
+}
+
+
+.about .about-us p{
+    line-height: 1.5;
+    margin-top: 1em;
+}
 
 /*--------- TESTIMONIALS ---------*/
 .testimonials{
     background-color: #161716;
+    padding: 1.25em 0 10.25em 0;
+}
+
+.testimonials .content{
     padding: var(--layout-padding);
 }
 
 .testimonials .depoiment-box{
     background-color: #0D0A15;
-    border: 1px solid #fff;
+    text-align: center;
+    border: 1px solid rgb(78, 78, 78);
     color: #fff;
-    width: 24%;
     padding: 1.25em;
+    height: 40vh;
+    position: relative;
+    width: 24%;
+    transition: all .5s ease;
 }
 
-.testimonials .depoiment-box p{
-    margin: 1em 0;
-    text-align: center;
+.depoiment-box .depoiment-effect:nth-child(1){
+    background-color: #66F7F0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.depoiment-box .depoiment-effect:nth-child(2){
+    background-color: #66F7F0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+}
+
+
+.depoiment-box .depoiment-effect:nth-child(3){
+    background-color: #66F7F0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+
+.depoiment-box .depoiment-effect:nth-child(4){
+    animation: animate4 1s linear infinite;
+    background-color: #66F7F0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
 }
 
 .testimonials .depoiment-box .bxs-quote-alt-right{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
-.testimonials .depoiment-box .stars{
-    margin: 0 auto;
+.testimonials .depoiment-box p{
+    margin: 1em 0 2.25em 0;
+}
+
+.depoiment-box .profile-content{
+    transform: translateY(1em);
+}
+
+.depoiment-box .profile-content .photo{
+    border-radius: 5em;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    transition: all .5s ease;
+}
+
+.depoiment-box .profile-content .photo:hover{
+    transform: scale(1.2);
+}
+
+.depoiment-box .profile-content span{
     display: block;
 }
 
-.testimonials .depoiment-box .profile-content{
-    position: absolute;
+.depoiment-box .profile-content .name{
+    font-weight: 600;
 }
 
-.testimonials .depoiment-box .photo{
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+.testimonials .partners{
+    font-size: 2.25em;
+    margin: 5em auto 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+.testimonials .partners i{
+    color: #fff;
+}
+
+/* ------------ LATEST NEWS ------------*/
+.news{
+    background-color: #0D0A15;
+    padding: 3.25em 0;
+}
+
+.news .title{
+    text-align: center;
+}
+
+.news .news-content{
+    border: 1px solid rgb(78, 78, 78);
+    color: #fff;
+    width: 32.5%;
+    height: 74vh;
+}
+
+.news .news-content .news-title{
+    padding: 0 1em;
+}
+
+.news .news-content .news-title p{
+    margin: 1em 0;
+}
+
+.news .news-content img{
+    width: 100%;
+    height: 50vh;
     object-fit: cover;
-    object-position: center;
+    /* Verificar porque flex-wrap não está sendo atribuído */
+}
+
+/* ----------- PROJECT IN MIND -----------*/
+.project-in-mind{
+    padding: var(--layout-padding);
+    background-color: #0D0A15;
+}
+
+.project-content{
+    text-align: center;
+}
+
+.project-in-mind .project-content .social-media{
+    border: 2px solid #66F7F0;
+    border-radius: 10em;
+    margin-bottom: 0.5em;
+    padding: 0.75em;
+}
+
+.social-media .bx{
+    font-size: 1.5em;
+}
+
+.project-content h2{
+    margin: 1.25em 0;
+}
+
+.project-in-mind .block-content-in-mind{
+    width: 20%;
+    margin: 0 auto;
+}
+
+/* ---------- FOOTER ------------*/
+.footer-content{
+    background-color: #0D0A15;
+    padding: var(--layout-padding);
+}
+
+.footer-content .block-content-footer{
+    align-items: flex-start;
+}
+
+.footer-content .links-box,
+.footer-content .links-box a{
+    color: #fff;
+}
+
+.footer-content .links-box p{
+    margin: 1.25em 0;
+}
+
+.footer-content .links-box .footer-links li{
+    padding: 1em 0;
+}
+
+.footer-content .links-box .link-flex{
+    justify-content: none;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.footer-content .links-box .secure{
+    color: #66F7F0;
 }
