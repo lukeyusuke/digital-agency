@@ -10,7 +10,7 @@
         <title> Digital Agency </title>
     </head>
     <body>
-        <section class="introduction">
+        <section id="introduction">
             <header class="header-content">
                 <div class="logo">
                     <a href="#">
@@ -22,25 +22,20 @@
                         <a class="main-link link-effect" href="#">
                             <li>HOME</li>
                         </a>
-                        <a class="main-link link-effect" href="#">
-                            <div class="dropdown">
-                                <li>SERVIÇOS</li>
-                                <i class='bx bx-chevron-down'></i>
-                            </div>
-                            <ul class="dropdown-links">
-                                <li>Serviço</li>
-                                <li>Serviço</li>
-                                <li>Serviço</li>
-                            </ul>
-                        </a>    
-                        <a class="main-link link-effect" href="#">
+                        <a class="main-link link-effect" href="#services">
+                            <li>SERVIÇOS</li>
+                        </a>
+                        <a class="main-link link-effect" href="#works">
                             <li>TRABALHOS</li>
                         </a>
-                        <a class="main-link link-effect" href="#">
+                        <a class="main-link link-effect" href="#about">
                             <li>SOBRE</li>
                         </a>
-                        <a class="main-link link-effect" href="#">
-                            <li>BLOG</li>
+                        <a class="main-link link-effect" href="#testimonials">
+                            <li> DEPOIMENTOS </li>
+                        </a>    
+                        <a class="main-link link-effect" href="#news">
+                            <li>NOTÍCIAS</li>
                         </a>
                         <a class="main-link contact-link" href="#">
                             <li>CONTATO</li>
@@ -67,37 +62,38 @@
                     <div class="flex-item">
                         <i class='bx bx-paper-plane'></i>
                         <h3 class="p-block-content"> Conceito do Futuro </h3>
-                        <div class="line"> </div>
+                        <div class="line-x"> </div>
                         <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
                     </div>
                     <div class="flex-item">
                         <i class='bx bx-brain'></i>
                         <h3 class="p-block-content"> Grandes Ideais </h3>
-                        <div class="line"> </div>
+                        <div class="line-x"> </div>
                         <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
                     </div>
                     <div class="flex-item">
                         <i class='bx bx-bulb'></i>
                         <h3 class="p-block-content"> Soluções Criativas </h3>
-                        <div class="line"> </div>
+                        <div class="line-x"> </div>
                         <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section id="services">
             <div class="content">
                 <div class="title-content">
-                    <!--
-                        <div class="line"> </div>
-                    -->
-                    <h2 class="heading"> Serviços </h2>
+                    <div class="main-heading">
+                        <div class="line-x"></div>
+                        <h2 class="heading"> Serviços </h2>
+                    </div>
                     <p class="paragraph-content"> NOSSOS SERVIÇOS À DISPOSIÇÃO DO CLIENTE </p>
                 </div>
                 <div class="block-content block-content-two">
                     <div class="flex-item">
                         <i class='bx bx-line-chart'></i>
                         <h3 class="p-block-content"> Estratégia Digital </h3>
+                        <div clas></div>
                         <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
                     </div>
                     <div class="flex-item">
@@ -126,18 +122,17 @@
                         <p class="p-block-content"> Lorem, ipsum dolor sit amet consectetur adipisicing elit telius </p>
                     </div>
                 </div>
-                <!--
-                    <div class="line-y">
-    
-                    </div>
-                -->
+                <div class="line-y"></div>
             </div>
         </section>
-        <section class="works">
-            <div>
-                <div class="content block-content">
+        <section id="works">
+            <div class="content title-content">
+                <div class="block-content">
                     <div>
-                        <h2 class="heading"> Trabalhos </h2>
+                        <div class="main-heading">
+                            <div class="line-x"> </div>
+                            <h2 class="heading"> Trabalhos </h2>
+                        </div>
                         <p class="paragraph-content"> COISAS QUE FIZEMOS </p>
                     </div>
                     <div class="button-style">
@@ -146,27 +141,49 @@
                         </a>
                     </div>
                 </div>
-                <div>  </div>
             </div>
+            <div>  </div>
             <div class="block-content">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
-                <img src="images/dark-tech.jpg" alt="Notebook feito pela Digital Agency">
+                <img src="images/works/watch.jpg" alt="Notebook feito pela Digital Agency">
+                <img src="images/works/watch.jpg" alt="Notebook feito pela Digital Agency">
+                <img src="images/works/watch.jpg" alt="Notebook feito pela Digital Agency">
+                <img src="images/works/watch.jpg" alt="Notebook feito pela Digital Agency">
+                <img src="images/works/watch.jpg" alt="Notebook feito pela Digital Agency">
+                <img src="images/works/watch.jpg" alt="Notebook feito pela Digital Agency">
             </div>
+            <div class="line-y"></div>
         </section>
-        <section class="about"> 
+        <section id="about"> 
             <div class="content">
-                <div>
-                    <h2 class="heading"> Sobre </h2>
+                <div class="title-content">
+                    <div class="main-heading">
+                        <div class="line-x"> </div>
+                        <h2 class="heading"> Sobre </h2>
+                    </div>
                     <p class="paragraph-content"> SOMOS MAIS QUE UMA AGÊNCIA DIGITAL </p>
                 </div>
                 <div class="gallery">
-                    <img class="image-one" src="images/about-us/about-us-one.jpg" alt="Equipe analisando base de dados">
-                    <img class="other-images" src="images/about-us/about-us-two.jpg" alt="Equipe conversando sobre o projeto">
-                    <img class="other-images" src="images/about-us/about-us-three.jpg" alt="Equipe analisando as estatísticas do projeto">
+                    <div class="item">
+                        <img src="images/about-us/image-one.jpeg" alt="Equipe analisando base de dados">
+                        <div class="title-about"> 
+                            <h3> Trabalho em Equipe </h3>
+                            <p> Criatividade e Planejamento </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/about-us/image-two.jpeg" alt="Equipe conversando sobre o projeto">
+                        <div class="title-about">
+                            <h3> Filosofia </h3>
+                            <p> Confiança em primeiro lugar </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/about-us/image-three.jpeg" alt="Equipe analisando as estatísticas do projeto">
+                        <div class="title-about"> 
+                            <h3> Escritório </h3>
+                            <p> Em qualquer lugar da Terra </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="block-content">
                     <div class="about-us">
@@ -189,19 +206,22 @@
                     </div>
                 </div>
             </div> 
-            <div>  </div>
+            <div class="line-y"> </div>
         </section>
-        <section class="testimonials">
-            <div class="content">
-                <h2 class="heading"> Depoimentos </h2>
+        <section id="testimonials">
+            <div class="content title-content">
+                <div class="main-heading">
+                    <div class="line-x"> </div>
+                    <h2 class="heading"> Depoimentos </h2>
+                </div>
                 <p class="paragraph-content"> SOMOS MAIS QUE UMA AGÊNCIA DIGITAL </p>
             </div>
             <div class="block-content block-content-depoiment">
                 <div class="depoiment-box">
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect">  </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect">  </span>
                     <i class='bx bxs-quote-alt-right'></i>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos expedita optio ullam quia voluptatibus amet vel. </p>
                     <img class="stars" src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
@@ -212,10 +232,10 @@
                     </div>
                 </div>
                 <div class="depoiment-box">
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect">  </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect">  </span>
                     <i class='bx bxs-quote-alt-right'></i>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos expedita optio ullam quia voluptatibus amet vel. </p>
                     <img class="stars" src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
@@ -226,10 +246,10 @@
                     </div>
                 </div>
                 <div class="depoiment-box">
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect">  </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect">  </span>
                     <i class='bx bxs-quote-alt-right'></i>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos expedita optio ullam quia voluptatibus amet vel. </p>
                     <img class="stars" src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
@@ -240,10 +260,10 @@
                     </div>
                 </div>
                 <div class="depoiment-box">
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect"> </span>
-                    <span class="depoiment-effect">  </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect"> </span>
+                    <span class="line-effect">  </span>
                     <i class='bx bxs-quote-alt-right'></i>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos expedita optio ullam quia voluptatibus amet vel. </p>
                     <img class="stars" src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
@@ -258,19 +278,19 @@
                 </div>
             </div>
             <div class="partners block-content">
-                <i class='bx bxl-slack'></i>
-                <i class='bx bxl-slack'></i>
-                <i class='bx bxl-slack'></i>
-                <i class='bx bxl-slack'></i>
-                <i class='bx bxl-slack'></i>
-                <i class='bx bxl-slack'></i>
-                <i class='bx bxl-slack'></i>
+                <i class='bx bxl-python'></i>
+                <i class='bx bxl-flutter'></i>
+                <i class='bx bxl-tailwind-css'></i>
+                <i class='bx bxl-gitlab'></i>
+                <i class='bx bxl-behance'></i>
+                <i class='bx bxl-medium'></i>
+                <i class='bx bxl-sass'></i>
             </div>
-            <div>  </div>
+            <div class="line-y"> </div>
         </section>
-        <section class="news">
+        <section id="news">
             <div>
-                <div class="title">
+                <div class="title-content title">
                     <h2 class="heading"> Latest News </h2>
                     <p class="paragraph-content"> ALGUMAS DAS NOSSAS NOTÍCIAS </p>
                 </div>
@@ -298,6 +318,7 @@
                         </div>
                     </div>
                     <div class="news-content">
+                        <!-- Verificar porque o Line Effect não funciona -->
                         <img src="images/latest-news/third-news.jpg" alt="Notícia 3">
                         <div class="news-title">
                             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quod dolore neque rem sapiente eaque adipisci </p>
@@ -314,13 +335,14 @@
         </section>
         <section class="project-in-mind">
             <div class="project-content">
+                <div class="line-y"></div>
                 <div class="block-content block-content-in-mind">
                     <div class="social-media">
                         <a href="">
                             <i class='bx bxl-facebook-circle'></i>
                         </a>
                     </div>
-                    <div class="social-media">
+                    <div class="social-media button-style">
                         <a href="">
                             <i class='bx bxl-twitter'></i>
                         </a>
@@ -344,24 +366,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <footer class="footer-content">
             <div class="content block-content block-content-footer">
                 <div class="links-box">
@@ -393,7 +397,7 @@
                     </ul>
                 </div>
                 <div class="links-box">
-                    <span> SERVIÇOS </span>
+                    <span> SOBRE NÓS </span>
                     <ul class="footer-links">
                         <a href="">
                             <li class="link-effect"> Serviço 1 </li>
@@ -409,25 +413,8 @@
                         </a>
                     </ul>
                 </div>
-                <div class="links-box">
-                    <span> SOBRE NÓS </span>
-                    <ul class="footer-links">
-                        <a href="">
-                            <li class="link-effect"> Sobre </li>
-                        </a>
-                        <a href="">
-                            <li class="link-effect"> Blog </li>
-                        </a>
-                        <a href="">
-                            <li class="link-effect"> Contato 1 </li>
-                        </a>
-                        <a href="">
-                            <li class="link-effect"> Contato 2 </li>
-                        </a>
-                    </ul>
-                </div>
             </div>
-            <div> </div>
+            <div class="long-line"> </div>
             <div class="content block-content">
                 <div class="links-box">
                     <span> Copyright 2021 </span>
@@ -463,6 +450,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="back-to-top">
+                <a href="#introduction">
+                    <i class='bx bx-chevron-up'></i>
+                </a>
             </div>
         </footer>
     </body>
