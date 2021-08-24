@@ -13,9 +13,13 @@ i{
     color: #66F7F0;
 }
 
+a{
+    color: #fff;
+}
+
 .content{
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 80%;
 }
 
 .paragraph-content{
@@ -51,7 +55,7 @@ i{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -72,7 +76,7 @@ i{
 
 .flex-item{
     background-color: #161716;
-    margin-bottom: 1.5em;
+    margin: 0 auto 1.5em auto;
     position: relative;
     padding: 2em;
     transition: all .5s ease;
@@ -104,10 +108,13 @@ i{
 }
 
 #introduction .header-content{
+    padding: 2em 4.5em;
+}
+
+#introduction #nav{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2em 4.5em;
     justify-content: space-between;
 }
 
@@ -116,15 +123,22 @@ i{
     font-size: 2em;
 }
 
+#btn-mobile{
+    display: none;
+}
+
+#introduction .menu{
+    display: flex;
+    align-items: center;
+}
+
 #introduction .header-content .main-link{
-    color: #fff;
-    display: inline-block;
     font-size: 0.85em;
     font-weight: 600;
     margin: 1em;
 }
 
-.link-effect::after{
+.main-link::after{
     content: '';
     display: block;
     background-color: #66F7F0;
@@ -133,48 +147,15 @@ i{
     transition: all .5s ease;
 }
 
-.link-effect:hover:after{
+.main-link:hover:after{
     width: 100%;
-}
-
-.header-content .main-link .dropdown-links{
-    background-color: #66F7F0;
-    opacity: 0;
-    position: absolute;
-    padding: 1.5em;
-    transform: translate(-1em, 1.25em);
-    transition: all .5s ease;
-}
-
-.header-content .main-link:hover .dropdown-links{
-    opacity: 1;
-}
-
-.main-link .dropdown-links li{
-    padding: 0.5em;
-    width: 100%;
-}
-
-.header-content .main-link .dropdown{
-    display: flex;
-    align-items: center;
-    gap: 2px;
-}
-
-.header-content .main-link .dropdown-links::before{
-    background-color: #66F7F0;
-    content: '';
-    position: absolute;
-    transform: translate(1.75em, -2em) rotate(135deg);
-    height: 15px; /* Modificar mais tarde */
-    width: 15px; /* Modificar mais tarde */
 }
 
 .header-content .contact-link{
     position: relative;
     padding: 0.85em 1.5em;
     border: 2px solid #66F7F0;
-    z-index: 1; /* IMPORTANTEE */
+    z-index: 1;
 }
 
 .header-content .contact-link::before{
@@ -192,23 +173,6 @@ i{
 
 .header-content .contact-link:hover::before{
     width: 100%;
-}
-
-@media (max-width: 932px){
-    .main-link{
-        opacity: 0;
-    }
-
-    .text-content, .links-box{
-        text-align: center;
-    }
-
-    .link-flex{
-        display: inline-block;
-        text-align: center;
-        width: 230px;
-        margin: 0 auto;
-    }
 }
 
 /*---------- INTRODUCTION CONTENT ---------*/
@@ -236,8 +200,9 @@ i{
     transition-delay: .1s;
 }
 
-.button-style button:hover{
-    color: #fff;
+.button-style button:hover, 
+#introduction .header-content .contact-link:hover{
+    color: #000;
 }
 
 .button-style button::before{
@@ -300,9 +265,14 @@ i{
 }
 
 #works .block-content img{
-    width: 224.83px;
-    margin-bottom: 1.5em;
+    width: 16.66%;
+    margin: 0 auto 0 auto;
     height: 100%;
+}
+
+#works .button-style{
+    margin: 2em 0 3em 0;
+    text-align: center;
 }
 
 /*------- ABOUT ---------*/
@@ -314,7 +284,7 @@ i{
 #about .about-us{
     color: #fff;
     padding: 1.5em;
-    width: 268px;
+    width: 400px;
 }
 
 #about .about-us + .about-us{
@@ -350,8 +320,7 @@ i{
     color: #fff;
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
     opacity: 0;
     line-height: 2;
     transition: all 1s ease;
@@ -375,8 +344,8 @@ i{
     background-color: #0D0A15;
     border: 1px solid rgb(78, 78, 78);
     color: #fff;
-    height: 40vh;
-    margin-bottom: 5.5em;
+    height: 270px;
+    margin: 0 auto 7em auto;
     padding: 1.5em;
     position: relative;
     text-align: center;
@@ -476,8 +445,7 @@ i{
     font-size: 2.25em;
     text-align: center;
     width: 350px;
-    background: red;
-    margin: 4em auto 1.5em auto;
+    margin: 1.5em auto 1.5em auto;
 }
 
 #testimonials .partners i{
@@ -497,9 +465,9 @@ i{
 #news .news-content{
     border: 1px solid rgb(78, 78, 78);
     color: #fff;
-    height: 76vh;
+    height: 480px;
     width: 440px;
-    margin-bottom: 2.5em;
+    margin: 0 auto 2.5em auto;
 }
 #news .news-content .news-title{
     padding: 1.5em;
@@ -511,7 +479,6 @@ i{
 
 #news .news-content img{
     width: 100%;
-    height: 50vh;
     object-fit: cover;
 }
 
@@ -534,9 +501,9 @@ i{
 .project-in-mind .project-content .social-media{
     border: 2px solid #66F7F0;
     border-radius: 2em;
-    width: 50px;
     padding: 0.65em;
-    background: red;
+    margin-bottom: 1em;
+    width: 50px;
 }
 
 .social-media .bx{
@@ -544,8 +511,7 @@ i{
 }
 
 .project-in-mind .block-content-in-mind{
-    width: 20%;
-    background: yellow;
+    width: 250px;
     margin: 0 auto;
 }
 
@@ -567,8 +533,7 @@ i{
 .footer-content .links-box,
 .footer-content .links-box a{
     color: #fff;
-    width: 280px;
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
 }
 
 .footer-content .links-box p{
@@ -583,10 +548,16 @@ i{
     display: flex;
     align-items: center;
     gap: 1em;
+    margin: 0 auto;
 }
 
 .footer-content .links-box .secure{
     color: #66F7F0;
+}
+
+.footer-content .contact-media{
+    width: 145px;
+    padding: 0 0 1.5em 0;
 }
 
 .footer-content .social-media:hover i{
@@ -600,8 +571,8 @@ i{
     padding: 0 .1em;
     font-size: 2em;
     position: absolute;
-    bottom: 0.5em;
-    right: 2em;
+    bottom: .5em;
+    right: 1.5em;
     transition: all 1s ease;
 }
 
@@ -609,11 +580,12 @@ i{
     border: 2px solid #66F7F0;
     border-radius: 5em;
     content: 'Voltar ao topo';
+    display: block;
     font-size: 0.5em;
     padding: .5em;
     position: absolute;
     opacity: 0;
-    transform: translate(-3.5em, -6em);
+    transform: translate(-3.5em, -4em);
     width: 110px;
     transition: all .5s ease;
 }
@@ -628,5 +600,150 @@ i{
 }
 
 .footer-content .back-to-top i:hover{
-    color: #fff;
+    color: #000;
+}
+
+/* ----------- MEDIA QUERIES -------------*/
+@media (max-width: 932px){
+    
+    #introduction .header-content{
+        padding-bottom: 5em;
+    }
+
+    #introduction .menu{
+        background: rgba(0,0,0,1);
+        display: block;
+        right: 0;
+        position: absolute;
+        top: 4.5em;
+        transition: .6s;
+        opacity: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .main-link{
+        text-align: center;
+        padding: 1em;
+    }
+
+    .main-link:hover:after{
+        width: 0;
+    }
+
+    .header-content .contact-link{
+        border: 0;
+        background: 0;
+    }
+    
+    .header-content .contact-link:hover::before{
+        width: 0;
+    }
+
+    #nav.active .menu{
+        height: 100vh;
+        opacity: 1;
+    }
+    
+    #btn-mobile{
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        font-size: 1rem;
+        gap: .5rem;
+        padding: .5rem 1rem;
+    }
+
+    #hamburger{
+        border-top: 2px solid;
+        width: 1em;
+        color: #fff;
+    }
+
+    #hamburger::after,
+    #hamburger::before{
+        background: currentColor;
+        content: '';
+        display: block;
+        height: 2px;
+        margin-top: 5px;
+        position: relative;
+        transition: .3s;
+        width: 1em;
+    }
+
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    .link-effect:hover:after{
+        width: 0;
+    }
+
+    #works .block-content img{
+        width: 33.3%;
+    }
+    
+    .text-content{
+        text-align: center;
+    }
+
+    .depoiment-box .profile-content:nth-child(1){
+        transform: translateY(1.25em);
+    }
+}
+
+@media (max-width: 750px){
+    #works .block-content img{
+        width: 50%;
+    }
+
+    .gallery{
+        display: block;
+    }
+
+    .gallery img{
+        display: block;
+        margin: 1.5em auto;
+        width: 100%;
+    }
+
+    .about-us{
+        border-left: 2px solid #66F7F0;
+        margin: 0 auto; 
+    }
+
+    .about-us + .about-us{
+        margin-top: 3em; 
+    }
+
+    .footer-content .block-content{
+        display: block;
+    }
+
+    .links-box{
+        text-align: center;
+    }
+
+    .footer-content .back-to-top{
+        font-size: 1.8em;
+        bottom: .75em;
+        right: 1.75em;
+    }
+}
+
+@media (max-width: 520px){
+    #works .block-content img{
+        width: 100%;
+    }
 }

@@ -12,39 +12,42 @@
     <body>
         <section id="introduction">
             <header class="header-content">
-                <div class="logo">
-                    <a href="#">
-                        <i class='bx bxl-slack'></i>
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <a class="main-link link-effect" href="#">
-                            <li>HOME</li>
+                <nav id="nav">
+                    <div class="logo">
+                        <a class="logo" href="#">
+                            <i class='bx bxl-slack'></i>
                         </a>
-                        <a class="main-link link-effect" href="#services">
-                            <li>SERVIÇOS</li>
-                        </a>
-                        <a class="main-link link-effect" href="#works">
-                            <li>TRABALHOS</li>
-                        </a>
-                        <a class="main-link link-effect" href="#about">
-                            <li>SOBRE</li>
-                        </a>
-                        <a class="main-link link-effect" href="#testimonials">
-                            <li> DEPOIMENTOS </li>
-                        </a>    
-                        <a class="main-link link-effect" href="#news">
-                            <li>NOTÍCIAS</li>
-                        </a>
-                        <a class="main-link contact-link" href="#">
-                            <li>CONTATO</li>
-                        </a>
-                        <a class="main-link" href="">
-                            <li>
+                    </div>
+                    <button id="btn-mobile">
+                        <span id="hamburger"></span>
+                    </button>
+                    <ul class="menu">
+                        <li class="main-link">
+                            <a href="#home">HOME</a>
+                        </li>
+                        <li class="main-link">
+                            <a href="#services">SERVIÇOS</a>
+                        </li>
+                        <li class="main-link">
+                            <a href="#works">TRABALHOS</a>
+                        </li>
+                        <li class="main-link">
+                            <a href="#about">SOBRE</a>
+                        </li>
+                        <li class="main-link">
+                            <a href="#testimonials"> DEPOIMENTOS </a>
+                        </li>    
+                        <li class="main-link">
+                            <a href="#news">NOTÍCIAS</a>
+                        </li>
+                        <li class="main-link contact-link">
+                            <a href="#">CONTATO</a>
+                        </li>
+                        <li class="main-link" href="">
+                            <a>
                                 <i class='bx bx-search'></i>
-                            </li>
-                        </a>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -135,11 +138,6 @@
                         </div>
                         <p class="paragraph-content"> COISAS QUE FIZEMOS </p>
                     </div>
-                    <div class="button-style">
-                        <a href="">
-                            <button> VEJA MAIS </button>
-                        </a>
-                    </div>
                 </div>
             </div>
             <div>  </div>
@@ -150,6 +148,11 @@
                 <img src="images/works/watch.jpg" alt="Notebook feito pela Digital Agency">
                 <img src="images/works/watch.jpg" alt="Notebook feito pela Digital Agency">
                 <img src="images/works/watch.jpg" alt="Notebook feito pela Digital Agency">
+            </div>
+            <div class="button-style">
+                <a href="">
+                    <button> VEJA MAIS </button>
+                </a>
             </div>
             <div class="line-y"></div>
         </section>
@@ -164,7 +167,7 @@
                 </div>
                 <div class="gallery">
                     <div class="item">
-                        <img src="images/about-us/image-one.jpeg" alt="Equipe analisando base de dados">
+                        <img class="image-one" src="images/about-us/image-one.jpeg" alt="Equipe analisando base de dados">
                         <div class="title-about"> 
                             <h3> Trabalho em Equipe </h3>
                             <p> Criatividade e Planejamento </p>
@@ -268,8 +271,8 @@
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos expedita optio ullam quia voluptatibus amet vel. </p>
                     <img class="stars" src="images/depoiments/assessment.png" alt="Avaliação - Feita a partir de estrelas">
                     <div class="profile-content">
-                        <img class="photo"src="images/depoiments/craig-assesment.jpeg" alt="Foto de Craig Schneider">
-                        <span class="name"> Craig Schneider </span>
+                        <img class="photo" src="images/depoiments/john-assesment.jpeg" alt="Foto de John Maguire">
+                        <span class="name"> John Maguire </span>
                         <span> Designation </span>
                     </div>
                 </div>
@@ -376,23 +379,24 @@
                     <div class="line-x">  </div>
                 </div>
                 <div class="links-box">
+                    <!-- COMO ALINHAR OS LINKS FLEX AO MEIO -->
                     <span> CONTACT US </span>
                     <ul class="footer-links">
                         <div class="link-flex">
                             <i class='bx bx-phone'></i>
-                            <li class="link-effect"> (+11) 94839-5784 </li>
+                            <li> (+11) 94839-5784 </li>
                         </div>
                         <div class="link-flex">
                             <i class='bx bx-envelope'></i>
-                            <li class="link-effect"> loremipsum07@gmail.com </li>
+                            <li> loremipsum07@gmail.com </li>
                         </div>
                         <div class="link-flex">
                             <i class='bx bxs-location-plus'></i>
-                            <li class="link-effect"> São Paulo, Brazil </li>
+                            <li> São Paulo, Brazil </li>
                         </div>
                         <div class="link-flex">
                             <i class='bx bx-calendar-alt' ></i>
-                            <li class="link-effect"> Segunda à Sexta </li>
+                            <li> Segunda à Sexta </li>
                         </div>
                     </ul>
                 </div>
@@ -400,23 +404,23 @@
                     <span> SOBRE NÓS </span>
                     <ul class="footer-links">
                         <a href="">
-                            <li class="link-effect"> Serviço 1 </li>
+                            <li> Serviço 1 </li>
                         </a>
                         <a href="">
-                            <li class="link-effect"> Serviço 2 </li>
+                            <li> Serviço 2 </li>
                         </a>
                         <a href="">
-                            <li class="link-effect"> Serviço 3 </li>
+                            <li> Serviço 3 </li>
                         </a>
                         <a href="">
-                            <li class="link-effect"> Serviço 4 </li>
+                            <li> Serviço 4 </li>
                         </a>
                     </ul>
                 </div>
             </div>
             <div class="long-line"> </div>
             <div class="content block-content">
-                <div class="links-box">
+                <div class="links-box terms">
                     <span> Copyright 2021 </span>
                     <a href="">
                         <span class="secure"> PRIVACY POLICY </span>
@@ -427,7 +431,8 @@
                     <p class="secure"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
                 <div class="links-box">
-                    <div class="link-flex">
+                    <div class="link-flex contact-media">
+                        <!-- COMO ALINHAR AS IMAGENS AO MEIO -->
                         <div class="social-media">
                             <a href="">
                                 <i class='bx bxl-facebook-circle'></i>
@@ -457,5 +462,6 @@
                 </a>
             </div>
         </footer>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
